@@ -4,6 +4,7 @@
  */
 package heladeria.practica1;
 
+import practica1.Pilas.PilaInteger;
 import javax.swing.JOptionPane;
 
 /**

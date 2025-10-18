@@ -2,34 +2,36 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package heladeria.practica1;
+package heladeria.practica1.Datos;
+
+import practica1.Modelos.Producto;
 
 /**
  *
  * @author abb
  */
-public class DataChar {
-    private Character valor;
-    private DataChar abajo;
+public class DatoProducto {
+    private Producto valor;
+    private DatoProducto abajo;
     
-    public DataChar(Character valor){
+    public DatoProducto(Producto valor){
         this.valor = valor;
         this.abajo = null;
     }
     
-    public Character getValor() {
+    public Producto getValor() {
         return valor;
     }
     
-    public void setValor(Character valor){
+    public void setValor(Producto valor){
         this.valor = valor;
     }
     
-    public DataChar getAbajo() {
+    public DatoProducto getAbajo() {
         return abajo;
     }
     
-    public void setABajo(DataChar abajo){
+    public void setABajo(DatoProducto abajo){
         this.abajo = abajo;
     }
 }

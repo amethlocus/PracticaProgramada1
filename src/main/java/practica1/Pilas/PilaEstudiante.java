@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package heladeria.practica1;
+package practica1.Pilas;
+import heladeria.practica1.Datos.DatoEstudiante;
+import practica1.Modelos.Estudiante;
 import javax.swing.JOptionPane;
 
 /**

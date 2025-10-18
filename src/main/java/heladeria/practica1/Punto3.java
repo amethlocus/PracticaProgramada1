@@ -4,6 +4,8 @@
  */
 package heladeria.practica1;
 
+import practica1.Pilas.PilaEstudiante;
+import practica1.Modelos.Estudiante;
 import javax.swing.JOptionPane;
 
 public class Punto3 {

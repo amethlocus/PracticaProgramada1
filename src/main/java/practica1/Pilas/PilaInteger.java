@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package heladeria.practica1;
+package practica1.Pilas;
+import heladeria.practica1.Datos.DatoInteger;
 import javax.swing.JOptionPane;
 
 /**
@@ -10,10 +11,10 @@ import javax.swing.JOptionPane;
  * @author abb
  */
 
-public class PilaChar{
-    private DataChar cima;
+public class PilaInteger{
+    private DatoInteger cima;
     
-    public PilaChar() {
+    public PilaInteger() {
         cima =  null;
     }
     
@@ -22,8 +23,8 @@ public class PilaChar{
     }
     
     // metodo apilar
-    public void push(Character valor){
-        DataChar nuevoDato = new DataChar(valor);
+    public void push(int valor){
+        DatoInteger nuevoDato = new DatoInteger(valor);
         if (estaVacia()){
             cima = nuevoDato;
         } else {
@@ -32,12 +33,12 @@ public class PilaChar{
         }
     }
     // metodo desapilar
-    public Character pop(){
+    public int pop(){
         if(estaVacia()){
             JOptionPane.showMessageDialog(null, "La pila está vacia, no se puede desapilar");    
-            return null;
+            return -1;
         } else {
-            Character dato = cima.getValor();
+            int dato = cima.getValor();
             cima = cima.getAbajo();
             return dato;
         }
@@ -50,7 +51,7 @@ public class PilaChar{
         }
         
         StringBuilder sb = new StringBuilder();
-        DataChar actual = cima;
+        DatoInteger actual = cima;
         while (actual != null) {
             sb.append(actual.getValor()).append(" ");
             actual = actual.getAbajo();
