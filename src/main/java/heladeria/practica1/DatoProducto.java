@@ -8,28 +8,28 @@ package heladeria.practica1;
  *
  * @author abb
  */
-public class Dato<T> {
-    private T valor;
-    private Dato abajo;
+public class DatoProducto {
+    private Producto valor;
+    private DatoProducto abajo;
     
-    public Dato(T valor){
+    public DatoProducto(Producto valor){
         this.valor = valor;
         this.abajo = null;
     }
     
-    public T getValor() {
+    public Producto getValor() {
         return valor;
     }
     
-    public void setValor(T valor){
+    public void setValor(Producto valor){
         this.valor = valor;
     }
     
-    public Dato getAbajo() {
+    public DatoProducto getAbajo() {
         return abajo;
     }
     
-    public void setABajo(Dato abajo){
+    public void setABajo(DatoProducto abajo){
         this.abajo = abajo;
     }
 }

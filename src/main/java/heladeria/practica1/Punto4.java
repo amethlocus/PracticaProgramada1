@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class Punto4 {
 
     public static void consonantesVocales() {
-        Pila<Character> pilaLetras = new Pila<>();
+        PilaChar pilaLetras = new PilaChar();
 
         // ingreso de letras
         for (int i = 1; i <= 10; i++) {
@@ -27,7 +27,7 @@ public class Punto4 {
         StringBuilder pilaOriginal = new StringBuilder("🔠 pila original (de arriba a abajo):\n");
 
         // auxiliar para recorrer sin perder los datos
-        Pila<Character> aux = new Pila<>();
+        PilaChar aux = new PilaChar();
 
         while (!pilaLetras.estaVacia()) {
             char letra = pilaLetras.pop();
@@ -52,7 +52,7 @@ public class Punto4 {
         JOptionPane.showMessageDialog(null, pilaOriginal.toString());
 
         // 🔽 eliminar vocales
-        Pila<Character> pilaSinVocales = new Pila<>();
+        PilaChar pilaSinVocales = new PilaChar();
         while (!pilaLetras.estaVacia()) {
             char letra = pilaLetras.pop();
             if (!esVocal(letra)) {

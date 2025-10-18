@@ -10,10 +10,10 @@ import javax.swing.JOptionPane;
  * @author abb
  */
 
-public class Pila<T>{
-    private Dato cima;
+public class PilaInteger{
+    private DatoInteger cima;
     
-    public Pila() {
+    public PilaInteger() {
         cima =  null;
     }
     
@@ -22,8 +22,8 @@ public class Pila<T>{
     }
     
     // metodo apilar
-    public void push(T valor){
-        Dato nuevoDato = new Dato(valor);
+    public void push(int valor){
+        DatoInteger nuevoDato = new DatoInteger(valor);
         if (estaVacia()){
             cima = nuevoDato;
         } else {
@@ -32,12 +32,12 @@ public class Pila<T>{
         }
     }
     // metodo desapilar
-    public T pop(){
+    public int pop(){
         if(estaVacia()){
             JOptionPane.showMessageDialog(null, "La pila está vacia, no se puede desapilar");    
-            return null;
+            return -1;
         } else {
-            T dato = (T) cima.getValor();
+            int dato = cima.getValor();
             cima = cima.getAbajo();
             return dato;
         }
@@ -50,7 +50,7 @@ public class Pila<T>{
         }
         
         StringBuilder sb = new StringBuilder();
-        Dato actual = cima;
+        DatoInteger actual = cima;
         while (actual != null) {
             sb.append(actual.getValor()).append(" ");
             actual = actual.getAbajo();

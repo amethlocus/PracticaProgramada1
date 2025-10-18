@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class Punto3 {
 
     public static void listaEstudiantes() {
-        Pila<Estudiante> pilaEstudiantes = new Pila<>();
+        PilaEstudiante pilaEstudiantes = new PilaEstudiante();
 
         // Ingreso de datos
         for (int i = 1; i <= 20; i++) {
@@ -23,7 +23,7 @@ public class Punto3 {
         Estudiante menor = null;
 
         // Pila auxiliar para no perder los datos
-        Pila<Estudiante> aux = new Pila<>();
+        PilaEstudiante aux = new PilaEstudiante();
 
         StringBuilder sb = new StringBuilder("👩lista de estudiantes:\n\n");
 

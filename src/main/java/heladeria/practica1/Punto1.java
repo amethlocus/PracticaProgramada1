@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 public class Punto1 {
 
     public void listaRevertida() {
-        Pila<Integer> pila = new Pila<>();
+        PilaInteger pila = new PilaInteger();
         boolean continuar = true;
 
         while (continuar) {

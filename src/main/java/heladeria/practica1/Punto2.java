@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class Punto2 {
 
     public static void listaProductos() {
-        Pila<Producto> pilaProductos = new Pila<>();
+        PilaProducto pilaProductos = new PilaProducto();
         boolean continuar = true;
 
         while (continuar) {
@@ -32,7 +32,7 @@ public class Punto2 {
         double total = 0.0;
 
         // Se usa peek() modificado localmente porque el metodo original solo muestra texto simple
-        Pila<Producto> aux = new Pila<>();
+        PilaProducto aux = new PilaProducto();
         while (!pilaProductos.estaVacia()) {
             Producto prod = pilaProductos.pop();
             sb.append(prod).append("\n"); // aca el append de prod funciona porque la clase Producto tiene un override ToString()
