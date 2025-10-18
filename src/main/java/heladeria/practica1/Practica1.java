@@ -3,14 +3,21 @@
  */
 
 package heladeria.practica1;
-
+import java.util.Stack;
 /**
  *
  * @author abb
  */
 public class Practica1 {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        //Punto1 punto1 = new Punto1();
+        //punto1.listaRevertida();
+        
+        Punto2.listaProductos();
+        
+        Punto3.listaEstudiantes();
+        
+        Punto4.consonantesVocales();
+        
     }
 }
